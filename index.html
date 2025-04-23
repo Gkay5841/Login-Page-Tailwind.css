@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-violet-600 to-indigo-600 min-h-screen flex items-center justify-center p-4"
+  >
+    <div
+      class="font-[Inter] bg-gradient-to-r from-indigo-400 to-cyan-400 w-full sm:w-[400px] md:w-[450px] p-6 md:p-8 rounded-xl"
+    >
+      <h3 class="text-white font-medium text-3xl md:text-4xl mb-8 md:ml-36">Login</h3>
+
+      <div class="w-full px-4">
+        <div class="mb-6">
+          <label for="username" class="block text-lg md:text-xl text-white mb-2"
+            >Username</label
+          >
+          <input
+            class="w-full rounded-xl p-2.5 md:p-3 bg-sky-400 placeholder-white/70"
+            type="text"
+            placeholder="Kullanıcı Adı"
+            id="username"
+          />
+        </div>
+
+        <div class="mb-6">
+          <label for="password" class="block text-lg md:text-xl text-white mb-2"
+            >Password</label
+          >
+          <input
+            class="w-full rounded-xl p-2.5 md:p-3 bg-sky-400 placeholder-white/70"
+            type="password"
+            id="password"
+            placeholder="Şifre"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between px-4 mb-6">
+        <div class="flex items-center gap-2">
+          <input class="h-5 w-5" type="checkbox" id="radio" />
+          <label for="radio" class="text-white">Beni hatırla</label>
+        </div>
+        <a href="#" class="text-white underline hover:text-gray-200"
+          >Forgot Password?</a
+        >
+      </div>
+
+      <div class="px-4">
+        <button
+          class="w-full text-white bg-sky-500 hover:bg-sky-700 rounded-xl py-3 px-6 md:py-4 transition duration-300"
+        >
+          Giriş yap
+        </button>
+
+        <div class="mt-4 text-center">
+          <p class="text-white text-sm">
+            Hesabın yok mu?
+            <a
+              href="#"
+              class="text-white underline hover:text-gray-200 font-medium"
+              >Kayıt Ol</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
